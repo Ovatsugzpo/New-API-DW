@@ -3,5 +3,23 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^7.6.3"
-  }
+  },
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Rework da API de Doctor Who",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ovatsugzpo/New-API-DW.git"
+  },
+  "author": "Gustavo Ponciano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ovatsugzpo/New-API-DW/issues"
+  },
+  "homepage": "https://github.com/Ovatsugzpo/New-API-DW#readme"
 }
