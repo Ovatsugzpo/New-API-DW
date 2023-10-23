@@ -4,9 +4,9 @@ const {Router} = require('express'),
       SeasonController = require('../controllers/SeasonController')
 
 router.get('/', EpisodesController.index)
-router.get('/Episodes', EpisodesController.AllEpisodes)
-router.get('/Seasons', SeasonController.GetSeasons)
-router.get('/Episode/:ep/:temp?', EpisodesController.SelectEpisode)
-router.get('/Season/:temp', SeasonController.SelectSeason)
+router.get('/episodes', EpisodesController.AllEpisodes)
+router.get('/seasons', SeasonController.GetSeasons)
+router.get('/episode/:ep/:temp?', EpisodesController.SelectEpisode)
+router.get('/season/:temp', SeasonController.SelectSeason)
 
 module.exports = router
