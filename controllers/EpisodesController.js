@@ -1,6 +1,9 @@
 const Episode_Model = require('../models/Episode_Model'),
       Season_Model = require('../models/Season_Model')
 module.exports = new class { 
+    async index(req, res){
+        res.send(200).send({Aplication: true})
+    }
     async AllEpisodes(req, res){
         try {
             let data = await Episode_Model.SelectAllEps()

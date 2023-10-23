@@ -3,6 +3,7 @@ const {Router} = require('express'),
       EpisodesController = require('../controllers/EpisodesController'),
       SeasonController = require('../controllers/SeasonController')
 
+router.get('/', EpisodesController.index)
 router.get('/Episodes', EpisodesController.AllEpisodes)
 router.get('/Seasons', SeasonController.GetSeasons)
 router.get('/Episode/:ep/:temp?', EpisodesController.SelectEpisode)
