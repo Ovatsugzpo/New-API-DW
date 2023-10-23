@@ -23,21 +23,21 @@ module.exports = new class {
                         if (data.length > 0){
                             res.status(200).send({data})
                         }else{
-                            res.status(400).send({'err':'Episodio não existe nessa temporada / Temporada não existe'})
+                            res.status(400).send({err:'Episodio não existe nessa temporada / Temporada não existe'})
                         }
                     }else{
-                        res.status(400).send({'err':'Temporada invalida'})
+                        res.status(400).send({err:'Temporada invalida'})
                     }
                 }else{
                     let data = await Episode_Model.SelectOneEpForSeason(ep)
                     if (data.length > 0){
                         res.status(200).send({data})
                     }else{
-                        res.status(400).send({'err':'Episodio não existe'})
+                        res.status(400).send({err:'Episodio não existe'})
                     }
                 }
             }else{
-                res.status(400).send({'err':'Episodio invalido'})
+                res.status(400).send({err:'Episodio invalido'})
             }
         } catch (err) {
             res.status(400).send({err})

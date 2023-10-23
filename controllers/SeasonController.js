@@ -8,10 +8,10 @@ module.exports = new class{
                 if (data.length > 0){
                     res.status(200).send({data})
                 }else{
-                    res.status(400).send({'err':'Temporada não existe'})
+                    res.status(400).send({err:'Temporada não existe'})
                 }
             }else{
-                res.status(400).send({'err':'Temporada invalida'})
+                res.status(400).send({err:'Temporada invalida'})
             }
         } catch (err) {
             res.status(400).send({err})
